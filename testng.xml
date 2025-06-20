@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+  <parameter name="Name" value="7397467496"></parameter>
+    <classes>
+       <class name="TestNG_Framework.MakemyTrip_Login_Using_TestNGParameterization"/>
+       <class name="TestNG_Framework.MakemyTripHomepage_using_TestNGFramework"/>
+       <class name="TestNG_Framework.MakemyTrip_using_TestNG_Priority"/>
+       <class name="TestNG_Framework.MakemyTrip_Select_Special_Fares_Using_TestNG"/>
+       <class name="TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods"/>
+    </classes>
+  </test> 
+    
+<test name="TestNG Grouping">
+<groups>
+  <run>
+  <include name="Popup"/>
+  <include name="Scrollingdown"/>
+  <exclude name="Scrollingup"/>
+  </run>
+  </groups>
+  <classes>
+     <class name="TestNG_Framework.MakemyTripHomepage_using_Grouping_with_TestNGFramework"/>
+     </classes>
+     </test>
+  </suite> 
