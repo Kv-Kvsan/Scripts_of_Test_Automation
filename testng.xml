@@ -9,6 +9,7 @@
        <class name="TestNG_Framework.MakemyTrip_using_TestNG_Priority"/>
        <class name="TestNG_Framework.MakemyTrip_Select_Special_Fares_Using_TestNG"/>
        <class name="TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods"/>
+       <class name="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework"/>
     </classes>
   </test> 
     

@@ -1,84 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
-    <parameter name="Name" value="8925461998"/>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNG_Framework.MakemyTripHomepage_using_TestNGFramework">
+      <class name="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework">
         <methods>
+          <include name="countrymenu1"/>
+          <include name="Windowenglishpopup"/>
+          <include name="NewtabArabic"/>
           <include name="driver"/>
-          <include name="teardown"/>
+          <include name="Language"/>
+          <include name="Currency"/>
           <include name="closepopup"/>
-        </methods>
-      </class> <!-- TestNG_Framework.MakemyTripHomepage_using_TestNGFramework -->
-      <class name="TestNG_Framework.MakemyTrip_using_TestNG_Priority">
-        <methods>
-          <include name="driver"/>
-          <include name="children"/>
-          <include name="Tocountry"/>
+          <include name="NewtabEnglish"/>
+          <include name="ChoosingCurrency1"/>
+          <include name="countrymenu"/>
+          <include name="choosingcountry"/>
+          <include name="teardown"/>
+          <include name="Set"/>
+          <include name="ChoosingCountry1"/>
+          <include name="country"/>
           <include name="Apply"/>
-          <include name="Travelclass"/>
-          <include name="tolocation"/>
-          <include name="ChoosingTo_DateClick"/>
-          <include name="teardown"/>
-          <include name="TC"/>
-          <include name="Infants"/>
-          <include name="fromdate"/>
-          <include name="adults"/>
-          <include name="todate"/>
+          <include name="ChoosingLanguage1"/>
+          <include name="Apply1"/>
+          <include name="Currency1"/>
+          <include name="ChoosingCurrency"/>
+          <include name="ChoosingLanguage"/>
+          <include name="Language1"/>
+          <include name="Country1"/>
+          <include name="originalwindow"/>
         </methods>
-      </class> <!-- TestNG_Framework.MakemyTrip_using_TestNG_Priority -->
-      <class name="TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods">
-        <methods>
-          <include name="Multi_City"/>
-          <include name="Travelclass"/>
-          <include name="adults"/>
-          <include name="Apply"/>
-          <include name="Fromlocation"/>
-          <include name="Fromcountry"/>
-          <include name="TC"/>
-          <include name="popup"/>
-          <include name="Infants"/>
-          <include name="driver"/>
-          <include name="ToCity"/>
-          <include name="children"/>
-          <include name="choosingcity"/>
-          <include name="FromDate"/>
-          <include name="ToDate"/>
-          <include name="teardown"/>
-          <include name="ToCountry"/>
-        </methods>
-      </class> <!-- TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods -->
-      <class name="TestNG_Framework.MakemyTrip_Select_Special_Fares_Using_TestNG">
-        <methods>
-          <include name="ArmedForces"/>
-          <include name="popup"/>
-          <include name="driver"/>
-          <include name="Student_Special_Fare"/>
-          <include name="DoctorandNurses"/>
-          <include name="Seniorcitizen"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- TestNG_Framework.MakemyTrip_Select_Special_Fares_Using_TestNG -->
+      </class> <!-- TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework -->
     </classes>
-  </test> <!-- Test(failed) -->
-  <test thread-count="5" name="Test Grouping(failed)">
-    <groups>
-      <run>
-        <include name="Popup"/>
-        <include name="Scrollingdown"/>
-        <exclude name="Scrollingup"/>
-      </run>
-    </groups>
-    <classes>
-      <class name="TestNG_Framework.MakemyTripHomepage_using_Grouping_with_TestNGFramework">
-        <methods>
-          <include name="scrolldown"/>
-          <include name="driver"/>
-          <include name="teardown"/>
-          <include name="closepopup"/>
-        </methods>
-      </class> <!-- TestNG_Framework.MakemyTripHomepage_using_Grouping_with_TestNGFramework -->
-    </classes>
-  </test> <!-- Test Grouping(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

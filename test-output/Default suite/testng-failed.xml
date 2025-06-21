@@ -3,16 +3,34 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNG_Framework.MakemyTrip_Select_Special_Fares_Using_TestNG">
+      <class name="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework">
         <methods>
-          <include name="ArmedForces"/>
+          <include name="countrymenu1"/>
+          <include name="Windowenglishpopup"/>
+          <include name="NewtabArabic"/>
           <include name="driver"/>
-          <include name="Student_Special_Fare"/>
-          <include name="DoctorandNurses"/>
-          <include name="Seniorcitizen"/>
+          <include name="Language"/>
+          <include name="Currency"/>
+          <include name="closepopup"/>
+          <include name="NewtabEnglish"/>
+          <include name="ChoosingCurrency1"/>
+          <include name="countrymenu"/>
+          <include name="choosingcountry"/>
           <include name="teardown"/>
+          <include name="Set"/>
+          <include name="ChoosingCountry1"/>
+          <include name="country"/>
+          <include name="Apply"/>
+          <include name="ChoosingLanguage1"/>
+          <include name="Apply1"/>
+          <include name="Currency1"/>
+          <include name="ChoosingCurrency"/>
+          <include name="ChoosingLanguage"/>
+          <include name="Language1"/>
+          <include name="Country1"/>
+          <include name="originalwindow"/>
         </methods>
-      </class> <!-- TestNG_Framework.MakemyTrip_Select_Special_Fares_Using_TestNG -->
+      </class> <!-- TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
