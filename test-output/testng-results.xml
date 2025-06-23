@@ -2,7 +2,7 @@
 <testng-results ignored="1" total="61" passed="60" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-21T21:09:43 IST" name="Suite" finished-at="2025-06-21T21:13:37 IST" duration-ms="234438">
+  <suite started-at="2025-06-23T14:16:59 IST" name="Suite" finished-at="2025-06-23T14:20:42 IST" duration-ms="223044">
     <groups>
       <group name="Popup">
         <method signature="MakemyTripHomepage_using_Grouping_with_TestNGFramework.closepopup()[pri:0, instance:TestNG_Framework.MakemyTripHomepage_using_Grouping_with_TestNGFramework@44c03695]" name="closepopup" class="TestNG_Framework.MakemyTripHomepage_using_Grouping_with_TestNGFramework"/>
@@ -11,13 +11,13 @@
         <method signature="MakemyTripHomepage_using_Grouping_with_TestNGFramework.scrolldown()[pri:0, instance:TestNG_Framework.MakemyTripHomepage_using_Grouping_with_TestNGFramework@44c03695]" name="scrolldown" class="TestNG_Framework.MakemyTripHomepage_using_Grouping_with_TestNGFramework"/>
       </group> <!-- Scrollingdown -->
     </groups>
-    <test started-at="2025-06-21T21:09:43 IST" name="Test" finished-at="2025-06-21T21:13:23 IST" duration-ms="219742">
+    <test started-at="2025-06-23T14:16:59 IST" name="Test" finished-at="2025-06-23T14:20:29 IST" duration-ms="210261">
       <class name="TestNG_Framework.MakemyTrip_Login_Using_TestNGParameterization">
-        <test-method is-config="true" signature="driver()[pri:0, instance:TestNG_Framework.MakemyTrip_Login_Using_TestNGParameterization@4c371370]" started-at="2025-06-21T21:09:43 IST" name="driver" finished-at="2025-06-21T21:09:49 IST" duration-ms="6305" status="PASS">
+        <test-method is-config="true" signature="driver()[pri:0, instance:TestNG_Framework.MakemyTrip_Login_Using_TestNGParameterization@4c371370]" started-at="2025-06-23T14:16:59 IST" name="driver" finished-at="2025-06-23T14:17:04 IST" duration-ms="5658" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driver -->
-        <test-method signature="popup(java.lang.String)[pri:0, instance:TestNG_Framework.MakemyTrip_Login_Using_TestNGParameterization@4c371370]" started-at="2025-06-21T21:09:49 IST" name="popup" finished-at="2025-06-21T21:10:01 IST" duration-ms="11735" status="PASS">
+        <test-method signature="popup(java.lang.String)[pri:0, instance:TestNG_Framework.MakemyTrip_Login_Using_TestNGParameterization@4c371370]" started-at="2025-06-23T14:17:04 IST" name="popup" finished-at="2025-06-23T14:17:12 IST" duration-ms="8066" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,299 +30,299 @@
         </test-method> <!-- popup -->
       </class> <!-- TestNG_Framework.MakemyTrip_Login_Using_TestNGParameterization -->
       <class name="TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods">
-        <test-method is-config="true" signature="driver()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-21T21:11:33 IST" name="driver" finished-at="2025-06-21T21:11:38 IST" duration-ms="4959" status="PASS">
+        <test-method is-config="true" signature="driver()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-23T14:18:41 IST" name="driver" finished-at="2025-06-23T14:18:45 IST" duration-ms="4138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driver -->
-        <test-method signature="popup()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-21T21:11:38 IST" name="popup" finished-at="2025-06-21T21:11:44 IST" duration-ms="5607" status="PASS">
+        <test-method signature="popup()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-23T14:18:45 IST" name="popup" finished-at="2025-06-23T14:18:50 IST" duration-ms="5106" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- popup -->
-        <test-method signature="Multi_City()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-21T21:11:44 IST" name="Multi_City" finished-at="2025-06-21T21:11:47 IST" depends-on-methods="TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods.popup" duration-ms="3282" status="PASS">
+        <test-method signature="Multi_City()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-23T14:18:50 IST" name="Multi_City" finished-at="2025-06-23T14:18:54 IST" depends-on-methods="TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods.popup" duration-ms="3298" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Multi_City -->
-        <test-method signature="Fromlocation()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-21T21:11:47 IST" name="Fromlocation" finished-at="2025-06-21T21:11:50 IST" depends-on-methods="TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods.Multi_City" duration-ms="3228" status="PASS">
+        <test-method signature="Fromlocation()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-23T14:18:54 IST" name="Fromlocation" finished-at="2025-06-23T14:18:57 IST" depends-on-methods="TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods.Multi_City" duration-ms="3152" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Fromlocation -->
-        <test-method signature="Fromcountry()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-21T21:11:50 IST" name="Fromcountry" finished-at="2025-06-21T21:11:53 IST" depends-on-methods="TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods.Fromlocation" duration-ms="3193" status="PASS">
+        <test-method signature="Fromcountry()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-23T14:18:57 IST" name="Fromcountry" finished-at="2025-06-23T14:19:00 IST" depends-on-methods="TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods.Fromlocation" duration-ms="3150" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Fromcountry -->
-        <test-method signature="ToCountry()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-21T21:11:53 IST" name="ToCountry" finished-at="2025-06-21T21:11:54 IST" depends-on-methods="TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods.Fromcountry" duration-ms="224" status="PASS">
+        <test-method signature="ToCountry()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-23T14:19:00 IST" name="ToCountry" finished-at="2025-06-23T14:19:00 IST" depends-on-methods="TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods.Fromcountry" duration-ms="227" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ToCountry -->
-        <test-method signature="FromDate()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-21T21:11:54 IST" name="FromDate" finished-at="2025-06-21T21:11:57 IST" depends-on-methods="TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods.ToCountry" duration-ms="3261" status="PASS">
+        <test-method signature="FromDate()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-23T14:19:00 IST" name="FromDate" finished-at="2025-06-23T14:19:04 IST" depends-on-methods="TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods.ToCountry" duration-ms="3316" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FromDate -->
-        <test-method signature="TC()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-21T21:11:57 IST" name="TC" finished-at="2025-06-21T21:12:00 IST" depends-on-methods="TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods.FromDate" duration-ms="3188" status="PASS">
+        <test-method signature="TC()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-23T14:19:04 IST" name="TC" finished-at="2025-06-23T14:19:07 IST" depends-on-methods="TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods.FromDate" duration-ms="3237" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC -->
-        <test-method signature="adults()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-21T21:12:00 IST" name="adults" finished-at="2025-06-21T21:12:03 IST" depends-on-methods="TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods.TC" duration-ms="3182" status="PASS">
+        <test-method signature="adults()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-23T14:19:07 IST" name="adults" finished-at="2025-06-23T14:19:10 IST" depends-on-methods="TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods.TC" duration-ms="3147" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- adults -->
-        <test-method signature="children()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-21T21:12:03 IST" name="children" finished-at="2025-06-21T21:12:06 IST" depends-on-methods="TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods.adults" duration-ms="3174" status="PASS">
+        <test-method signature="children()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-23T14:19:10 IST" name="children" finished-at="2025-06-23T14:19:13 IST" depends-on-methods="TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods.adults" duration-ms="3159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- children -->
-        <test-method signature="Infants()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-21T21:12:06 IST" name="Infants" finished-at="2025-06-21T21:12:10 IST" depends-on-methods="TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods.children" duration-ms="3181" status="PASS">
+        <test-method signature="Infants()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-23T14:19:13 IST" name="Infants" finished-at="2025-06-23T14:19:16 IST" depends-on-methods="TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods.children" duration-ms="3180" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Infants -->
-        <test-method signature="Travelclass()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-21T21:12:10 IST" name="Travelclass" finished-at="2025-06-21T21:12:13 IST" depends-on-methods="TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods.Infants" duration-ms="3192" status="PASS">
+        <test-method signature="Travelclass()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-23T14:19:16 IST" name="Travelclass" finished-at="2025-06-23T14:19:19 IST" depends-on-methods="TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods.Infants" duration-ms="3186" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Travelclass -->
-        <test-method signature="Apply()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-21T21:12:13 IST" name="Apply" finished-at="2025-06-21T21:12:13 IST" depends-on-methods="TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods.Travelclass" duration-ms="167" status="PASS">
+        <test-method signature="Apply()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-23T14:19:19 IST" name="Apply" finished-at="2025-06-23T14:19:20 IST" depends-on-methods="TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods.Travelclass" duration-ms="197" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Apply -->
-        <test-method signature="ToCity()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-21T21:12:13 IST" name="ToCity" finished-at="2025-06-21T21:12:16 IST" depends-on-methods="TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods.Apply" duration-ms="3166" status="PASS">
+        <test-method signature="ToCity()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-23T14:19:20 IST" name="ToCity" finished-at="2025-06-23T14:19:23 IST" depends-on-methods="TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods.Apply" duration-ms="3173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ToCity -->
-        <test-method signature="choosingcity()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-21T21:12:16 IST" name="choosingcity" finished-at="2025-06-21T21:12:18 IST" depends-on-methods="TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods.ToCity" duration-ms="2205" status="PASS">
+        <test-method signature="choosingcity()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-23T14:19:23 IST" name="choosingcity" finished-at="2025-06-23T14:19:25 IST" depends-on-methods="TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods.ToCity" duration-ms="2230" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- choosingcity -->
-        <test-method signature="ToDate()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-21T21:12:18 IST" name="ToDate" finished-at="2025-06-21T21:12:18 IST" depends-on-methods="TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods.choosingcity" duration-ms="196" status="PASS">
+        <test-method signature="ToDate()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-23T14:19:25 IST" name="ToDate" finished-at="2025-06-23T14:19:25 IST" depends-on-methods="TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods.choosingcity" duration-ms="194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ToDate -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-21T21:12:18 IST" name="teardown" finished-at="2025-06-21T21:12:22 IST" duration-ms="3350" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods@2a4fb17b]" started-at="2025-06-23T14:19:25 IST" name="teardown" finished-at="2025-06-23T14:19:29 IST" duration-ms="3422" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- TestNG_Framework.MakemyTrip_MulticityMakemyTrip_Using_TestNG_DependsonMethods -->
       <class name="TestNG_Framework.MakemyTrip_Select_Special_Fares_Using_TestNG">
-        <test-method is-config="true" signature="driver()[pri:0, instance:TestNG_Framework.MakemyTrip_Select_Special_Fares_Using_TestNG@6302bbb1]" started-at="2025-06-21T21:11:13 IST" name="driver" finished-at="2025-06-21T21:11:19 IST" duration-ms="5616" status="PASS">
+        <test-method is-config="true" signature="driver()[pri:0, instance:TestNG_Framework.MakemyTrip_Select_Special_Fares_Using_TestNG@6302bbb1]" started-at="2025-06-23T14:18:21 IST" name="driver" finished-at="2025-06-23T14:18:28 IST" duration-ms="6203" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driver -->
-        <test-method signature="popup()[pri:1, instance:TestNG_Framework.MakemyTrip_Select_Special_Fares_Using_TestNG@6302bbb1]" started-at="2025-06-21T21:11:19 IST" name="popup" finished-at="2025-06-21T21:11:23 IST" duration-ms="3968" status="PASS">
+        <test-method signature="popup()[pri:1, instance:TestNG_Framework.MakemyTrip_Select_Special_Fares_Using_TestNG@6302bbb1]" started-at="2025-06-23T14:18:28 IST" name="popup" finished-at="2025-06-23T14:18:31 IST" duration-ms="3351" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- popup -->
-        <test-method signature="Student_Special_Fare()[pri:2, instance:TestNG_Framework.MakemyTrip_Select_Special_Fares_Using_TestNG@6302bbb1]" started-at="2025-06-21T21:11:23 IST" name="Student_Special_Fare" finished-at="2025-06-21T21:11:25 IST" duration-ms="2135" status="PASS">
+        <test-method signature="Student_Special_Fare()[pri:2, instance:TestNG_Framework.MakemyTrip_Select_Special_Fares_Using_TestNG@6302bbb1]" started-at="2025-06-23T14:18:31 IST" name="Student_Special_Fare" finished-at="2025-06-23T14:18:33 IST" duration-ms="2337" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Student_Special_Fare -->
-        <test-method signature="Seniorcitizen()[pri:3, instance:TestNG_Framework.MakemyTrip_Select_Special_Fares_Using_TestNG@6302bbb1]" started-at="2025-06-21T21:11:25 IST" name="Seniorcitizen" finished-at="2025-06-21T21:11:27 IST" duration-ms="2238" status="PASS">
+        <test-method signature="Seniorcitizen()[pri:3, instance:TestNG_Framework.MakemyTrip_Select_Special_Fares_Using_TestNG@6302bbb1]" started-at="2025-06-23T14:18:33 IST" name="Seniorcitizen" finished-at="2025-06-23T14:18:35 IST" duration-ms="2183" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Seniorcitizen -->
-        <test-method signature="ArmedForces()[pri:4, instance:TestNG_Framework.MakemyTrip_Select_Special_Fares_Using_TestNG@6302bbb1]" started-at="2025-06-21T21:11:27 IST" name="ArmedForces" finished-at="2025-06-21T21:11:29 IST" duration-ms="2112" status="PASS">
+        <test-method signature="ArmedForces()[pri:4, instance:TestNG_Framework.MakemyTrip_Select_Special_Fares_Using_TestNG@6302bbb1]" started-at="2025-06-23T14:18:35 IST" name="ArmedForces" finished-at="2025-06-23T14:18:38 IST" duration-ms="2171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ArmedForces -->
-        <test-method signature="DoctorandNurses()[pri:5, instance:TestNG_Framework.MakemyTrip_Select_Special_Fares_Using_TestNG@6302bbb1]" started-at="2025-06-21T21:11:29 IST" name="DoctorandNurses" finished-at="2025-06-21T21:11:30 IST" duration-ms="161" status="PASS">
+        <test-method signature="DoctorandNurses()[pri:5, instance:TestNG_Framework.MakemyTrip_Select_Special_Fares_Using_TestNG@6302bbb1]" started-at="2025-06-23T14:18:38 IST" name="DoctorandNurses" finished-at="2025-06-23T14:18:38 IST" duration-ms="143" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DoctorandNurses -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TestNG_Framework.MakemyTrip_Select_Special_Fares_Using_TestNG@6302bbb1]" started-at="2025-06-21T21:11:30 IST" name="teardown" finished-at="2025-06-21T21:11:33 IST" duration-ms="3430" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestNG_Framework.MakemyTrip_Select_Special_Fares_Using_TestNG@6302bbb1]" started-at="2025-06-23T14:18:38 IST" name="teardown" finished-at="2025-06-23T14:18:41 IST" duration-ms="3431" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- TestNG_Framework.MakemyTrip_Select_Special_Fares_Using_TestNG -->
       <class name="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework">
-        <test-method is-config="true" signature="driver()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-21T21:12:22 IST" name="driver" finished-at="2025-06-21T21:12:27 IST" duration-ms="5587" status="PASS">
+        <test-method is-config="true" signature="driver()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-23T14:19:29 IST" name="driver" finished-at="2025-06-23T14:19:34 IST" duration-ms="5184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driver -->
-        <test-method signature="closepopup()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-21T21:12:27 IST" name="closepopup" finished-at="2025-06-21T21:12:32 IST" duration-ms="4155" status="PASS">
+        <test-method signature="closepopup()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-23T14:19:34 IST" name="closepopup" finished-at="2025-06-23T14:19:38 IST" duration-ms="3743" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closepopup -->
-        <test-method signature="countrymenu()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-21T21:12:32 IST" name="countrymenu" finished-at="2025-06-21T21:12:34 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.closepopup" duration-ms="2146" status="PASS">
+        <test-method signature="countrymenu()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-23T14:19:38 IST" name="countrymenu" finished-at="2025-06-23T14:19:40 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.closepopup" duration-ms="2519" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- countrymenu -->
-        <test-method signature="country()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-21T21:12:34 IST" name="country" finished-at="2025-06-21T21:12:36 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.countrymenu" duration-ms="2124" status="PASS">
+        <test-method signature="country()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-23T14:19:40 IST" name="country" finished-at="2025-06-23T14:19:42 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.countrymenu" duration-ms="2124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- country -->
-        <test-method signature="choosingcountry()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-21T21:12:36 IST" name="choosingcountry" finished-at="2025-06-21T21:12:38 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.country" duration-ms="2155" status="PASS">
+        <test-method signature="choosingcountry()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-23T14:19:42 IST" name="choosingcountry" finished-at="2025-06-23T14:19:44 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.country" duration-ms="2124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- choosingcountry -->
-        <test-method signature="Currency()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-21T21:12:38 IST" name="Currency" finished-at="2025-06-21T21:12:40 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.choosingcountry" duration-ms="2232" status="PASS">
+        <test-method signature="Currency()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-23T14:19:44 IST" name="Currency" finished-at="2025-06-23T14:19:47 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.choosingcountry" duration-ms="2210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Currency -->
-        <test-method signature="ChoosingCurrency()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-21T21:12:40 IST" name="ChoosingCurrency" finished-at="2025-06-21T21:12:42 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.Currency" duration-ms="2193" status="PASS">
+        <test-method signature="ChoosingCurrency()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-23T14:19:47 IST" name="ChoosingCurrency" finished-at="2025-06-23T14:19:49 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.Currency" duration-ms="2140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChoosingCurrency -->
-        <test-method signature="Language()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-21T21:12:42 IST" name="Language" finished-at="2025-06-21T21:12:45 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.ChoosingCurrency" duration-ms="2168" status="PASS">
+        <test-method signature="Language()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-23T14:19:49 IST" name="Language" finished-at="2025-06-23T14:19:51 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.ChoosingCurrency" duration-ms="2169" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Language -->
-        <test-method signature="ChoosingLanguage()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-21T21:12:45 IST" name="ChoosingLanguage" finished-at="2025-06-21T21:12:47 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.Language" duration-ms="2163" status="PASS">
+        <test-method signature="ChoosingLanguage()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-23T14:19:51 IST" name="ChoosingLanguage" finished-at="2025-06-23T14:19:53 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.Language" duration-ms="2137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChoosingLanguage -->
-        <test-method signature="Apply()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-21T21:12:47 IST" name="Apply" finished-at="2025-06-21T21:12:49 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.ChoosingLanguage" duration-ms="2212" status="PASS">
+        <test-method signature="Apply()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-23T14:19:53 IST" name="Apply" finished-at="2025-06-23T14:19:55 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.ChoosingLanguage" duration-ms="2331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Apply -->
-        <test-method signature="Set()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-21T21:12:49 IST" name="Set" finished-at="2025-06-21T21:12:49 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.Apply" duration-ms="48" status="PASS">
+        <test-method signature="Set()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-23T14:19:55 IST" name="Set" finished-at="2025-06-23T14:19:55 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.Apply" duration-ms="32" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Set -->
-        <test-method signature="NewtabArabic()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-21T21:12:49 IST" name="NewtabArabic" finished-at="2025-06-21T21:12:58 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.Set" duration-ms="9475" status="PASS">
+        <test-method signature="NewtabArabic()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-23T14:19:55 IST" name="NewtabArabic" finished-at="2025-06-23T14:20:05 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.Set" duration-ms="9336" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NewtabArabic -->
-        <test-method signature="originalwindow()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-21T21:12:59 IST" name="originalwindow" finished-at="2025-06-21T21:13:01 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.NewtabArabic" duration-ms="2103" status="PASS">
+        <test-method signature="originalwindow()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-23T14:20:05 IST" name="originalwindow" finished-at="2025-06-23T14:20:07 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.NewtabArabic" duration-ms="2083" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- originalwindow -->
-        <test-method signature="countrymenu1()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-21T21:13:01 IST" name="countrymenu1" finished-at="2025-06-21T21:13:03 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.originalwindow" duration-ms="2183" status="PASS">
+        <test-method signature="countrymenu1()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-23T14:20:07 IST" name="countrymenu1" finished-at="2025-06-23T14:20:09 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.originalwindow" duration-ms="2188" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- countrymenu1 -->
-        <test-method signature="Country1()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-21T21:13:03 IST" name="Country1" finished-at="2025-06-21T21:13:05 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.countrymenu1" duration-ms="2267" status="PASS">
+        <test-method signature="Country1()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-23T14:20:09 IST" name="Country1" finished-at="2025-06-23T14:20:11 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.countrymenu1" duration-ms="2175" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Country1 -->
-        <test-method signature="ChoosingCountry1()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-21T21:13:05 IST" name="ChoosingCountry1" finished-at="2025-06-21T21:13:07 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.Country1" duration-ms="2275" status="PASS">
+        <test-method signature="ChoosingCountry1()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-23T14:20:11 IST" name="ChoosingCountry1" finished-at="2025-06-23T14:20:13 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.Country1" duration-ms="2160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChoosingCountry1 -->
-        <test-method signature="Currency1()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-21T21:13:07 IST" name="Currency1" finished-at="2025-06-21T21:13:09 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.ChoosingCountry1" duration-ms="2121" status="PASS">
+        <test-method signature="Currency1()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-23T14:20:13 IST" name="Currency1" finished-at="2025-06-23T14:20:16 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.ChoosingCountry1" duration-ms="2144" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Currency1 -->
-        <test-method signature="ChoosingCurrency1()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-21T21:13:09 IST" name="ChoosingCurrency1" finished-at="2025-06-21T21:13:12 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.Currency1" duration-ms="2190" status="PASS">
+        <test-method signature="ChoosingCurrency1()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-23T14:20:16 IST" name="ChoosingCurrency1" finished-at="2025-06-23T14:20:18 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.Currency1" duration-ms="2145" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChoosingCurrency1 -->
-        <test-method signature="Language1()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-21T21:13:12 IST" name="Language1" finished-at="2025-06-21T21:13:14 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.ChoosingCurrency1" duration-ms="2158" status="PASS">
+        <test-method signature="Language1()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-23T14:20:18 IST" name="Language1" finished-at="2025-06-23T14:20:20 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.ChoosingCurrency1" duration-ms="2121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Language1 -->
-        <test-method signature="ChoosingLanguage1()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-21T21:13:14 IST" name="ChoosingLanguage1" finished-at="2025-06-21T21:13:16 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.Language1" duration-ms="2186" status="PASS">
+        <test-method signature="ChoosingLanguage1()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-23T14:20:20 IST" name="ChoosingLanguage1" finished-at="2025-06-23T14:20:22 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.Language1" duration-ms="2169" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChoosingLanguage1 -->
-        <test-method signature="Apply1()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-21T21:13:16 IST" name="Apply1" finished-at="2025-06-21T21:13:18 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.ChoosingLanguage1" duration-ms="2210" status="PASS">
+        <test-method signature="Apply1()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-23T14:20:22 IST" name="Apply1" finished-at="2025-06-23T14:20:24 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.ChoosingLanguage1" duration-ms="2246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Apply1 -->
-        <test-method signature="NewtabEnglish()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-21T21:13:18 IST" name="NewtabEnglish" finished-at="2025-06-21T21:13:19 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.Apply1" duration-ms="789" status="PASS">
+        <test-method signature="NewtabEnglish()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-23T14:20:24 IST" name="NewtabEnglish" finished-at="2025-06-23T14:20:25 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.Apply1" duration-ms="829" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NewtabEnglish -->
-        <test-method signature="Windowenglishpopup()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-21T21:13:19 IST" name="Windowenglishpopup" finished-at="2025-06-21T21:13:19 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.NewtabEnglish" duration-ms="267" status="PASS">
+        <test-method signature="Windowenglishpopup()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-23T14:20:25 IST" name="Windowenglishpopup" finished-at="2025-06-23T14:20:25 IST" depends-on-methods="TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework.NewtabEnglish" duration-ms="278" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Windowenglishpopup -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-21T21:13:19 IST" name="teardown" finished-at="2025-06-21T21:13:23 IST" duration-ms="3439" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework@5c6648b0]" started-at="2025-06-23T14:20:25 IST" name="teardown" finished-at="2025-06-23T14:20:29 IST" duration-ms="3420" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- TestNG_Framework.MakemyTrip_OpenNewTab_by_Choosingcountry_Dropdown_Using_TestNGFramework -->
       <class name="TestNG_Framework.MakemyTrip_using_TestNG_Priority">
-        <test-method is-config="true" signature="driver()[pri:0, instance:TestNG_Framework.MakemyTrip_using_TestNG_Priority@4135c3b]" started-at="2025-06-21T21:10:19 IST" name="driver" finished-at="2025-06-21T21:10:24 IST" duration-ms="5098" status="PASS">
+        <test-method is-config="true" signature="driver()[pri:0, instance:TestNG_Framework.MakemyTrip_using_TestNG_Priority@4135c3b]" started-at="2025-06-23T14:17:29 IST" name="driver" finished-at="2025-06-23T14:17:34 IST" duration-ms="4963" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driver -->
-        <test-method signature="popup()[pri:1, instance:TestNG_Framework.MakemyTrip_using_TestNG_Priority@4135c3b]" started-at="2025-06-21T21:10:24 IST" name="popup" finished-at="2025-06-21T21:10:31 IST" duration-ms="6518" status="PASS">
+        <test-method signature="popup()[pri:1, instance:TestNG_Framework.MakemyTrip_using_TestNG_Priority@4135c3b]" started-at="2025-06-23T14:17:34 IST" name="popup" finished-at="2025-06-23T14:17:39 IST" duration-ms="5802" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- popup -->
-        <test-method signature="fromlocation()[pri:2, instance:TestNG_Framework.MakemyTrip_using_TestNG_Priority@4135c3b]" started-at="2025-06-21T21:10:31 IST" name="fromlocation" finished-at="2025-06-21T21:10:34 IST" duration-ms="3240" status="PASS">
+        <test-method signature="fromlocation()[pri:2, instance:TestNG_Framework.MakemyTrip_using_TestNG_Priority@4135c3b]" started-at="2025-06-23T14:17:39 IST" name="fromlocation" finished-at="2025-06-23T14:17:43 IST" duration-ms="3155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fromlocation -->
-        <test-method signature="fromcountry()[pri:3, instance:TestNG_Framework.MakemyTrip_using_TestNG_Priority@4135c3b]" started-at="2025-06-21T21:10:34 IST" name="fromcountry" finished-at="2025-06-21T21:10:37 IST" duration-ms="3319" status="PASS">
+        <test-method signature="fromcountry()[pri:3, instance:TestNG_Framework.MakemyTrip_using_TestNG_Priority@4135c3b]" started-at="2025-06-23T14:17:43 IST" name="fromcountry" finished-at="2025-06-23T14:17:46 IST" duration-ms="3162" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fromcountry -->
-        <test-method signature="tolocation()[pri:4, instance:TestNG_Framework.MakemyTrip_using_TestNG_Priority@4135c3b]" started-at="2025-06-21T21:10:38 IST" name="tolocation" finished-at="2025-06-21T21:10:41 IST" duration-ms="3234" status="PASS">
+        <test-method signature="tolocation()[pri:4, instance:TestNG_Framework.MakemyTrip_using_TestNG_Priority@4135c3b]" started-at="2025-06-23T14:17:46 IST" name="tolocation" finished-at="2025-06-23T14:17:49 IST" duration-ms="3149" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tolocation -->
-        <test-method signature="Tocountry()[pri:5, instance:TestNG_Framework.MakemyTrip_using_TestNG_Priority@4135c3b]" started-at="2025-06-21T21:10:41 IST" name="Tocountry" finished-at="2025-06-21T21:10:44 IST" duration-ms="3222" status="PASS">
+        <test-method signature="Tocountry()[pri:5, instance:TestNG_Framework.MakemyTrip_using_TestNG_Priority@4135c3b]" started-at="2025-06-23T14:17:49 IST" name="Tocountry" finished-at="2025-06-23T14:17:52 IST" duration-ms="3148" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tocountry -->
-        <test-method signature="fromdate()[pri:6, instance:TestNG_Framework.MakemyTrip_using_TestNG_Priority@4135c3b]" started-at="2025-06-21T21:10:44 IST" name="fromdate" finished-at="2025-06-21T21:10:47 IST" duration-ms="3168" status="PASS">
+        <test-method signature="fromdate()[pri:6, instance:TestNG_Framework.MakemyTrip_using_TestNG_Priority@4135c3b]" started-at="2025-06-23T14:17:52 IST" name="fromdate" finished-at="2025-06-23T14:17:55 IST" duration-ms="3227" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fromdate -->
-        <test-method signature="todate()[pri:7, instance:TestNG_Framework.MakemyTrip_using_TestNG_Priority@4135c3b]" started-at="2025-06-21T21:10:47 IST" name="todate" finished-at="2025-06-21T21:10:50 IST" duration-ms="3290" status="PASS">
+        <test-method signature="todate()[pri:7, instance:TestNG_Framework.MakemyTrip_using_TestNG_Priority@4135c3b]" started-at="2025-06-23T14:17:55 IST" name="todate" finished-at="2025-06-23T14:17:59 IST" duration-ms="3302" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- todate -->
-        <test-method signature="ChoosingTo_DateClick()[pri:8, instance:TestNG_Framework.MakemyTrip_using_TestNG_Priority@4135c3b]" started-at="2025-06-21T21:10:50 IST" name="ChoosingTo_DateClick" finished-at="2025-06-21T21:10:54 IST" duration-ms="3197" status="PASS">
+        <test-method signature="ChoosingTo_DateClick()[pri:8, instance:TestNG_Framework.MakemyTrip_using_TestNG_Priority@4135c3b]" started-at="2025-06-23T14:17:59 IST" name="ChoosingTo_DateClick" finished-at="2025-06-23T14:18:02 IST" duration-ms="3178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChoosingTo_DateClick -->
-        <test-method signature="TC()[pri:9, instance:TestNG_Framework.MakemyTrip_using_TestNG_Priority@4135c3b]" started-at="2025-06-21T21:10:54 IST" name="TC" finished-at="2025-06-21T21:10:57 IST" duration-ms="3241" status="PASS">
+        <test-method signature="TC()[pri:9, instance:TestNG_Framework.MakemyTrip_using_TestNG_Priority@4135c3b]" started-at="2025-06-23T14:18:02 IST" name="TC" finished-at="2025-06-23T14:18:05 IST" duration-ms="3147" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC -->
-        <test-method signature="adults()[pri:10, instance:TestNG_Framework.MakemyTrip_using_TestNG_Priority@4135c3b]" started-at="2025-06-21T21:10:57 IST" name="adults" finished-at="2025-06-21T21:11:00 IST" duration-ms="3270" status="PASS">
+        <test-method signature="adults()[pri:10, instance:TestNG_Framework.MakemyTrip_using_TestNG_Priority@4135c3b]" started-at="2025-06-23T14:18:05 IST" name="adults" finished-at="2025-06-23T14:18:08 IST" duration-ms="3178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- adults -->
-        <test-method signature="children()[pri:11, instance:TestNG_Framework.MakemyTrip_using_TestNG_Priority@4135c3b]" started-at="2025-06-21T21:11:00 IST" name="children" finished-at="2025-06-21T21:11:03 IST" duration-ms="3176" status="PASS">
+        <test-method signature="children()[pri:11, instance:TestNG_Framework.MakemyTrip_using_TestNG_Priority@4135c3b]" started-at="2025-06-23T14:18:08 IST" name="children" finished-at="2025-06-23T14:18:11 IST" duration-ms="3157" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- children -->
-        <test-method signature="Infants()[pri:12, instance:TestNG_Framework.MakemyTrip_using_TestNG_Priority@4135c3b]" started-at="2025-06-21T21:11:03 IST" name="Infants" finished-at="2025-06-21T21:11:07 IST" duration-ms="3171" status="PASS">
+        <test-method signature="Infants()[pri:12, instance:TestNG_Framework.MakemyTrip_using_TestNG_Priority@4135c3b]" started-at="2025-06-23T14:18:11 IST" name="Infants" finished-at="2025-06-23T14:18:15 IST" duration-ms="3259" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Infants -->
-        <test-method signature="Travelclass()[pri:13, instance:TestNG_Framework.MakemyTrip_using_TestNG_Priority@4135c3b]" started-at="2025-06-21T21:11:07 IST" name="Travelclass" finished-at="2025-06-21T21:11:10 IST" duration-ms="3154" status="PASS">
+        <test-method signature="Travelclass()[pri:13, instance:TestNG_Framework.MakemyTrip_using_TestNG_Priority@4135c3b]" started-at="2025-06-23T14:18:15 IST" name="Travelclass" finished-at="2025-06-23T14:18:18 IST" duration-ms="3163" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Travelclass -->
-        <test-method signature="Apply()[pri:14, instance:TestNG_Framework.MakemyTrip_using_TestNG_Priority@4135c3b]" started-at="2025-06-21T21:11:10 IST" name="Apply" finished-at="2025-06-21T21:11:10 IST" duration-ms="168" status="PASS">
+        <test-method signature="Apply()[pri:14, instance:TestNG_Framework.MakemyTrip_using_TestNG_Priority@4135c3b]" started-at="2025-06-23T14:18:18 IST" name="Apply" finished-at="2025-06-23T14:18:18 IST" duration-ms="174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Apply -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TestNG_Framework.MakemyTrip_using_TestNG_Priority@4135c3b]" started-at="2025-06-21T21:11:10 IST" name="teardown" finished-at="2025-06-21T21:11:13 IST" duration-ms="3463" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestNG_Framework.MakemyTrip_using_TestNG_Priority@4135c3b]" started-at="2025-06-23T14:18:18 IST" name="teardown" finished-at="2025-06-23T14:18:21 IST" duration-ms="3441" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- TestNG_Framework.MakemyTrip_using_TestNG_Priority -->
       <class name="TestNG_Framework.MakemyTripHomepage_using_TestNGFramework">
-        <test-method is-config="true" signature="driver()[pri:0, instance:TestNG_Framework.MakemyTripHomepage_using_TestNGFramework@2a65fe7c]" started-at="2025-06-21T21:10:01 IST" name="driver" finished-at="2025-06-21T21:10:06 IST" duration-ms="5057" status="PASS">
+        <test-method is-config="true" signature="driver()[pri:0, instance:TestNG_Framework.MakemyTripHomepage_using_TestNGFramework@2a65fe7c]" started-at="2025-06-23T14:17:12 IST" name="driver" finished-at="2025-06-23T14:17:17 IST" duration-ms="4390" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driver -->
-        <test-method signature="closepopup()[pri:0, instance:TestNG_Framework.MakemyTripHomepage_using_TestNGFramework@2a65fe7c]" started-at="2025-06-21T21:10:06 IST" name="closepopup" finished-at="2025-06-21T21:10:16 IST" duration-ms="9644" status="PASS">
+        <test-method signature="closepopup()[pri:0, instance:TestNG_Framework.MakemyTripHomepage_using_TestNGFramework@2a65fe7c]" started-at="2025-06-23T14:17:17 IST" name="closepopup" finished-at="2025-06-23T14:17:25 IST" duration-ms="8556" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closepopup -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TestNG_Framework.MakemyTripHomepage_using_TestNGFramework@2a65fe7c]" started-at="2025-06-21T21:10:16 IST" name="teardown" finished-at="2025-06-21T21:10:19 IST" duration-ms="3425" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestNG_Framework.MakemyTripHomepage_using_TestNGFramework@2a65fe7c]" started-at="2025-06-23T14:17:25 IST" name="teardown" finished-at="2025-06-23T14:17:29 IST" duration-ms="3326" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- TestNG_Framework.MakemyTripHomepage_using_TestNGFramework -->
     </test> <!-- Test -->
-    <test started-at="2025-06-21T21:13:23 IST" name="TestNG Grouping" finished-at="2025-06-21T21:13:37 IST" duration-ms="14636">
+    <test started-at="2025-06-23T14:20:29 IST" name="TestNG Grouping" finished-at="2025-06-23T14:20:42 IST" duration-ms="12717">
       <class name="TestNG_Framework.MakemyTripHomepage_using_Grouping_with_TestNGFramework">
-        <test-method is-config="true" signature="driver()[pri:0, instance:TestNG_Framework.MakemyTripHomepage_using_Grouping_with_TestNGFramework@44c03695]" started-at="2025-06-21T21:13:23 IST" name="driver" finished-at="2025-06-21T21:13:27 IST" duration-ms="4057" status="PASS">
+        <test-method is-config="true" signature="driver()[pri:0, instance:TestNG_Framework.MakemyTripHomepage_using_Grouping_with_TestNGFramework@44c03695]" started-at="2025-06-23T14:20:29 IST" name="driver" finished-at="2025-06-23T14:20:33 IST" duration-ms="4082" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driver -->
-        <test-method signature="closepopup()[pri:0, instance:TestNG_Framework.MakemyTripHomepage_using_Grouping_with_TestNGFramework@44c03695]" started-at="2025-06-21T21:13:27 IST" name="closepopup" finished-at="2025-06-21T21:13:32 IST" duration-ms="5565" status="PASS">
+        <test-method signature="closepopup()[pri:0, instance:TestNG_Framework.MakemyTripHomepage_using_Grouping_with_TestNGFramework@44c03695]" started-at="2025-06-23T14:20:33 IST" name="closepopup" finished-at="2025-06-23T14:20:38 IST" duration-ms="5181" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closepopup -->
-        <test-method signature="scrolldown()[pri:0, instance:TestNG_Framework.MakemyTripHomepage_using_Grouping_with_TestNGFramework@44c03695]" started-at="2025-06-21T21:13:32 IST" name="scrolldown" finished-at="2025-06-21T21:13:32 IST" duration-ms="11" status="PASS">
+        <test-method signature="scrolldown()[pri:0, instance:TestNG_Framework.MakemyTripHomepage_using_Grouping_with_TestNGFramework@44c03695]" started-at="2025-06-23T14:20:38 IST" name="scrolldown" finished-at="2025-06-23T14:20:38 IST" duration-ms="24" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scrolldown -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TestNG_Framework.MakemyTripHomepage_using_Grouping_with_TestNGFramework@44c03695]" started-at="2025-06-21T21:13:32 IST" name="teardown" finished-at="2025-06-21T21:13:37 IST" duration-ms="4989" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestNG_Framework.MakemyTripHomepage_using_Grouping_with_TestNGFramework@44c03695]" started-at="2025-06-23T14:20:38 IST" name="teardown" finished-at="2025-06-23T14:20:42 IST" duration-ms="3408" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

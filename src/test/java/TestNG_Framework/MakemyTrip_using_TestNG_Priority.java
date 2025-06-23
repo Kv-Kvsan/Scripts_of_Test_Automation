@@ -62,7 +62,7 @@ public class MakemyTrip_using_TestNG_Priority {
 
 	@Test(priority = 6)
 	public void fromdate() throws InterruptedException {
-		WebElement FromDate = driver.findElement(By.xpath("//*[@id='top-banner']/div[2]/div/div/div/div/div/div[2]/div[1]/div[3]/label/following::div[73]"));
+		WebElement FromDate = driver.findElement(By.xpath("//*[@id='top-banner']/div[2]/div/div/div/div/div/div[2]/div[1]/div[3]/label/following::div[84]"));
 		FromDate.click();
 		Thread.sleep(3000);
 	}
