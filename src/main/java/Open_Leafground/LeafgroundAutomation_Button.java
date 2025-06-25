@@ -61,8 +61,8 @@ public class LeafgroundAutomation_Button {
 		//Find the height and width of this button
 		WebElement HandW=driver.findElement(By.xpath("//*[@id='j_idt88:j_idt98']"));
 		Dimension HeightandWidth=HandW.getSize();
-		int height = HandW.getSize().getHeight();
 		int width = HandW.getSize().getWidth();
+		int height = HandW.getSize().getHeight();
 		
 		System.out.println("The Height and Width is: " +HeightandWidth);
 		System.out.println("The Width is: " +width);
