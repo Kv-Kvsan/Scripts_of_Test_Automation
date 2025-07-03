@@ -52,7 +52,8 @@ public class Login_SauceDemo_Sending_Data_Via_Table_Without_Header {
 	    
 	}
 	@Then("the user enters valid login credentials")
-	public void the_user_enters_valid_login_credentials(DataTable dataTable) throws InterruptedException {
+	public void the_user_enters_valid_login_credentials(DataTable dataTable) throws InterruptedException
+	{
 		
 		Map<String, String> credentials=dataTable.asMap(String.class, String.class);
 		String username=credentials.get("username"); 
@@ -65,9 +66,9 @@ public class Login_SauceDemo_Sending_Data_Via_Table_Without_Header {
 		WebElement Pwd=driver.findElement(By.xpath("//*[@id='login_button_container']/div/form/input[2]"));
 		Pwd.sendKeys(password); 
 		Thread.sleep(2000);
-	    
-	    
+	        
 	}
+	
 	@When("the user submits the login form")
 	public void the_user_submits_the_login_form() throws InterruptedException
 	{
