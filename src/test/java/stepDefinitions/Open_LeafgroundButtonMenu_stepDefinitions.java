@@ -1,33 +1,66 @@
-package Open_Leafground;
-
+package stepDefinitions;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Point;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class LeafgroundAutomation_Button {
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
-	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
-		WebDriverManager.chromedriver().setup();
-		ChromeDriver driver = new ChromeDriver();
+public class Open_LeafgroundButtonMenu_stepDefinitions {
+	WebDriver driver;
+
+	@Given("the user opens the URL of the LeafGround")
+	public void the_user_opens_the_url_of_the_leaf_ground() throws InterruptedException 
+	{
+		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://leafground.com/");
 		Thread.sleep(2000);
 
-		//Clicking Element
-		WebElement Element=driver.findElement(By.xpath("//*[@id='menuform:j_idt40']"));
-		Element.click();
+	}
+	@Then("the dashboard page of the leafground site should be displayed")
+	public void the_dashboard_page_of_the_leafground_site_should_be_displayed() {
+		String CurrentURL=driver.getCurrentUrl();
+		String ExpectedURL="https://leafground.com/";
+		if(CurrentURL.equalsIgnoreCase(ExpectedURL))
+		{
+			System.out.println("It is a dashboard URL\n " +ExpectedURL);
+		}
+		else
+		{
+			System.out.println("It is not a dashboard URL");
+		}
+
+	}
+	@When("the user clicks the elements menu on the right hand side, list of options should be displayed")
+	public void the_user_clicks_the_elements_menu_on_the_right_hand_side_list_of_options_should_be_displayed() throws InterruptedException 
+	{
+		WebElement element=driver.findElement(By.xpath("//*[@id='menuform:j_idt40']"));
+		element.click();
 		Thread.sleep(2000);
 
-		//Clicking Button
+	}
+	@Then("the user clicks the button menu from the list of options")
+	public void the_user_clicks_the_button_menu_from_the_list_of_options() throws InterruptedException 
+	{
 		WebElement Button=driver.findElement(By.xpath("//*[@id='menuform:m_button']"));
 		Button.click();
 		Thread.sleep(2000);
+	}
+	@Then("the user navigated to the button page")
+	public void the_user_navigated_to_the_button_page()
+	{
 
+		System.out.println(driver.getCurrentUrl());
+
+	}
+	@Then("the user should perform certain actions")
+	public void the_user_should_perform_certain_actions() throws InterruptedException {
 		//Click and confirm the title
 		WebElement Click=driver.findElement(By.xpath("//*[@id='j_idt88:j_idt90']"));
 		Click.click();
@@ -50,7 +83,7 @@ public class LeafgroundAutomation_Button {
 		Thread.sleep(2000);
 
 		//Find the position of the Submit button
-		
+
 		WebElement position=driver.findElement(By.xpath("//*[@id='j_idt88:j_idt94']"));
 		Point location=position.getLocation();
 		int x=location.getX();
@@ -63,7 +96,7 @@ public class LeafgroundAutomation_Button {
 		Dimension HeightandWidth=HandW.getSize();
 		int width = HandW.getSize().getWidth();
 		int height = HandW.getSize().getHeight();
-		
+
 		System.out.println("The Height and Width is: " +HeightandWidth);
 		System.out.println("The Width is: " +width);
 		System.out.println("The Height is: " +height);
@@ -77,8 +110,9 @@ public class LeafgroundAutomation_Button {
 		WebElement hiddenbutton=driver.findElement(By.xpath("//*[@id='j_idt88:j_idt100']/following::div[2]"));
 		hiddenbutton.click();
 		Thread.sleep(2000);
-		
+
 		driver.quit();
+
 
 	}
 }

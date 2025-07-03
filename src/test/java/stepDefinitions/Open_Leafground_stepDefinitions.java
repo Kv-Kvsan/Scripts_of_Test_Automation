@@ -26,10 +26,10 @@ public class Open_Leafground_stepDefinitions {
 	@Then("the dashboard page should be displayed")
 	public void the_dashboard_page_should_be_displayed() {
 		String CurrentURL=driver.getCurrentUrl();
-		String ExpectedURL="https://www.leafground.com/dashboard.xhtml";
+		String ExpectedURL="https://leafground.com/";
 		if(CurrentURL.equalsIgnoreCase(ExpectedURL))
 		{
-			System.out.println("It is a dashboard URL" +ExpectedURL);
+			System.out.println("It is a dashboard URL\n" +ExpectedURL);
 		}
 		else
 		{
