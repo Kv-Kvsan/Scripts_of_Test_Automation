@@ -1,3 +1,4 @@
+@Mousehover
 Feature: Open leafground.com feature
 Scenario: Open the LeafGround site and verify all the menus
 

@@ -83,4 +83,66 @@ public class Login_SauceDemo_Application_Using_Parameterization {
 		Thread.sleep(3000);
 		driver.quit();
 	}
+	
+	@Given("the user loads the URL of the Saucedemo application")
+	public void the_user_loads_the_url_of_the_saucedemo_application() throws InterruptedException {
+		WebDriverManager.chromedriver().setup();
+		Map<String, Object> prefs = new HashMap<>();
+        prefs.put("credentials_enable_service", false);
+        prefs.put("profile.password_manager_enabled", false);
+        prefs.put("profile.password_manager_leak_detection", false);
+
+        ChromeOptions options = new ChromeOptions();
+        options.setExperimentalOption("prefs", prefs);
+		driver=new ChromeDriver(options);
+		driver.manage().window().maximize();
+		driver.get("https://www.saucedemo.com/v1/");
+		Thread.sleep(2000);
+	    
+	}
+	@Then("the user should see the login form")
+	public void the_user_should_see_the_login_form() {
+		String CurrentURL=driver.getCurrentUrl();
+		String ExpectedURL="https://www.saucedemo.com/v1/";
+		if(CurrentURL.equalsIgnoreCase(ExpectedURL))
+		{
+			System.out.println("It is a login URL\n" +ExpectedURL);
+		}
+		else
+		{
+			System.out.println("It isn't a login URL");
+		}
+	    
+	}
+	@Then("the user types an incorrect Username as {string}")
+	public void the_user_types_an_incorrect_username_as(String string_username) throws InterruptedException {
+		WebElement UN=driver.findElement(By.xpath("//*[@id='login_button_container']/div/form/input[1]"));
+		UN.sendKeys(string_username);
+		Thread.sleep(2000);
+	    
+	}
+	@Then("the user types an incorrect Password as {string}")
+	public void the_user_types_an_incorrect_password_as(String string_password) throws InterruptedException {
+		WebElement Pwd=driver.findElement(By.xpath("//*[@id='login_button_container']/div/form/input[2]"));
+		Pwd.sendKeys(string_password); 
+		Thread.sleep(2000);
+	    
+	}
+	@When("the user clicks the Sign-In button")
+	public void the_user_clicks_the_sign_in_button() throws InterruptedException {
+		WebElement Signin=driver.findElement(By.xpath("//*[@id='login_button_container']/div/form/input[3]"));
+		Signin.click();   
+		Thread.sleep(3000);   
+	}
+	@Then("^the application should show an error saying \"(.*?)\"$")
+	public void the_application_should_show_an_error_saying(String Errormessage) {
+		System.out.println("The Error message is: " + Errormessage);
+	   
+	}
+	@Then("the user should close the browser")
+	public void the_user_should_close_the_browser() throws InterruptedException {
+	    
+		Thread.sleep(3000);
+		driver.quit();
+	}
 }
