@@ -3,13 +3,23 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNG_Framework.MakemyTrip_using_TestNG_Priority">
+      <class name="TestNG_Framework.LeafgroundAutomation_Alert_Using_TestNG">
         <methods>
-          <include name="driver"/>
+          <include name="Alert_Confirmdialog"/>
+          <include name="reports"/>
+          <include name="Alert_Simpledialog"/>
+          <include name="prompt_dialog"/>
+          <include name="flush"/>
+          <include name="MinandMax"/>
+          <include name="setup"/>
+          <include name="Alertmenu"/>
+          <include name="Alert_sweetmodaldialog"/>
+          <include name="browser"/>
+          <include name="Alert_Confirmation"/>
+          <include name="Alert_SweetAlertSimpleDialog"/>
           <include name="teardown"/>
-          <include name="todate"/>
         </methods>
-      </class> <!-- TestNG_Framework.MakemyTrip_using_TestNG_Priority -->
+      </class> <!-- TestNG_Framework.LeafgroundAutomation_Alert_Using_TestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

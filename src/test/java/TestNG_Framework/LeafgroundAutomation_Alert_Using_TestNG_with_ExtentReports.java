@@ -1,9 +1,14 @@
-package Open_Leafground;
+package TestNG_Framework;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -12,31 +17,51 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class LeafgroundAutomation_Alert
+
+public class LeafgroundAutomation_Alert_Using_TestNG_with_ExtentReports
 {
-	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
 
+	ChromeDriver driver;
+	ExtentReports extentReport;
+	ExtentSparkReporter sparkReport;
+	ExtentTest test;
 
-		ExtentReports extentReport=new ExtentReports();
-		ExtentSparkReporter sparkReport = new ExtentSparkReporter("test-output/ExtentReport_using_Mainmethod_Alert.html");
+	@BeforeSuite
+	public void reports()
+	{
+		extentReport=new ExtentReports();
+		sparkReport = new ExtentSparkReporter("test-output/ExtentReport_Alert.html");
 		extentReport.attachReporter(sparkReport);
-
-		ExtentTest test=extentReport.createTest("Open the chrome browser");
-		test.log(Status.INFO, "Verifying the leafground site");
-
+		
+	}
+	
+	@BeforeClass
+	public void setup() throws InterruptedException
+	{
+		test=extentReport.createTest("Open the leafground browser");
+		test.log(Status.INFO, "Verifying the leafground browser");
 		WebDriverManager.chromedriver().setup();
-		ChromeDriver driver = new ChromeDriver();
+		driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		test.pass("I am automating an alert module");
 		driver.get("https://leafground.com/");
 		Thread.sleep(2000);
+	}
 
+	@Test
+	public void browser() throws InterruptedException
+	{
 		//Browser
-		test.log(Status.INFO, "Opening the browser menu");
+		test=extentReport.createTest("Opening the Browser menu");
+		test.log(Status.INFO, "Verifying the browser menu");
 		WebElement Browser=driver.findElement(By.xpath("//*[@id='menuform:j_idt39']"));
 		Browser.click();
 		Thread.sleep(2000);
+	}
 
+	@Test(dependsOnMethods="browser")
+	public void Alertmenu() throws InterruptedException
+	{
 		//Clicking Alert
 		test=extentReport.createTest("Opening the Alert menu");
 		test.log(Status.INFO, "Verifying the Alert browser");
@@ -44,27 +69,34 @@ public class LeafgroundAutomation_Alert
 		Alert.click();
 		test.log(Status.PASS, "Alert menu opened successfully!!!");
 		Thread.sleep(2000);
+	}
 
-		//Clicking Alert(Simple Dialog)
+	@Test(dependsOnMethods="Alertmenu")
+	public void Alert_Simpledialog() throws InterruptedException
+	{
 		test=extentReport.createTest("Verifying the Alert_Simpledialog module");
 		test.log(Status.INFO, "Verifying the Alert_Simpledialog module");
-
+		
 		WebElement Alertsimpledialog=driver.findElement(By.xpath("//button[@id='j_idt88:j_idt91']"));
 		Alertsimpledialog.click();
 		test.log(Status.PASS, "Simple dialog alert clicked successfully!!!");
-
+		
 		Thread.sleep(2000);
 
 		Alert alert=driver.switchTo().alert();
 		alert.accept();
-
+		
 		test.log(Status.PASS, "Simple dialog alert accepted successfully!!!");
 		Thread.sleep(2000);
+	}
 
+	@Test(dependsOnMethods="Alert_Simpledialog")
+	public void Alert_Confirmdialog() throws InterruptedException
+	{
 		//Clicking Alert (Confirm Dialog)
 		test=extentReport.createTest("Verifying the Alert_Confirmdialog module");
 		test.log(Status.INFO, "Verifying the Alert_Confirmdialog module");
-
+		
 		WebElement ConfirmDialog=driver.findElement(By.xpath("//button[@id='j_idt88:j_idt93']"));
 		ConfirmDialog.click();
 		Thread.sleep(2000);
@@ -74,6 +106,11 @@ public class LeafgroundAutomation_Alert
 		test.log(Status.PASS, "Simple dialog alert dismissed successfully!!!");
 		Thread.sleep(2000);
 
+	}
+
+	@Test(dependsOnMethods= "Alert_Confirmdialog")
+	public void Alert_SweetAlertSimpleDialog() throws InterruptedException
+	{
 		//Clicking Sweet Alert (Simple Dialog)
 		test=extentReport.createTest("Verifying the Alert_SweetAlertSimpleDialog module");
 		test.log(Status.INFO, "Verifying the Alert_SweetAlertSimpleDialog module");
@@ -101,14 +138,18 @@ public class LeafgroundAutomation_Alert
 		test.log(Status.PASS, "Sweet Alert Simple dialog alert closed successfully!!!");
 		Thread.sleep(2000);
 
+	}
 
+	@Test(dependsOnMethods="Alert_SweetAlertSimpleDialog")
+	public void Alert_sweetmodaldialog() throws InterruptedException
+	{
 		//Clicking Sweet Modal Dialog
 		test=extentReport.createTest("Verifying the Alert_sweetmodaldialog module");
 		test.log(Status.INFO, "Verifying the Alert_sweetmodaldialog module");
-
+		
 		WebElement SweetModalDialog=driver.findElement(By.xpath("//*[@id='j_idt88:j_idt100']"));
 		SweetModalDialog.click();
-
+		
 		test.log(Status.PASS, "Sweet Modal Dialog clicked successfully");
 		Thread.sleep(2000);
 
@@ -117,11 +158,15 @@ public class LeafgroundAutomation_Alert
 		Crossbutton.click();
 		test.log(Status.PASS, "Sweet Modal Dialog closed successfully");
 		Thread.sleep(2000);
+	}
 
+	@Test(dependsOnMethods="Alert_sweetmodaldialog")
+	public void prompt_dialog() throws InterruptedException
+	{
 		//Alert (Prompt Dialog)
 		test=extentReport.createTest("Verifying the prompt_dialog module");
 		test.log(Status.INFO, "prompt_dialog opened successfully");
-
+		
 		WebElement Prompt=driver.findElement(By.xpath("//*[@id='j_idt88:j_idt104']"));
 		Prompt.click();
 		test.log(Status.PASS, "prompt_dialog clicked successfully");
@@ -132,11 +177,15 @@ public class LeafgroundAutomation_Alert
 		Promptvalue.accept();
 		test.log(Status.PASS, "prompt value accepted clicked successfully");
 		Thread.sleep(2000);
+	}
 
+	@Test(dependsOnMethods= "prompt_dialog")
+	public void Alert_Confirmation() throws InterruptedException
+	{
 		//Sweet Alert (Confirmation)
 		test=extentReport.createTest("Verifying the Alert_Confirmation module");
 		test.log(Status.INFO, "Verifying the Alert_Confirmation module");
-
+		
 		WebElement ConfirmationYes=driver.findElement(By.xpath("//*[@id='j_idt88:j_idt106']"));
 		ConfirmationYes.click();
 		test.log(Status.INFO, "Clicked the confirmation button for Yes");
@@ -146,20 +195,25 @@ public class LeafgroundAutomation_Alert
 		Yes.click();
 		test.log(Status.PASS, "Clicked Yes for confirmation");
 		Thread.sleep(2000);
-
+		
 		WebElement ConfirmationNo=driver.findElement(By.xpath("//*[@id='j_idt88:j_idt106']"));
 		ConfirmationNo.click();
 		test.log(Status.PASS, "Clicked the confirmation button for No");
-
+		
 		WebElement No=driver.findElement(By.xpath("//*[@id='j_idt88:j_idt109']"));
 		No.click();
 		test.log(Status.PASS, "Clicked No for confirmation");
 		Thread.sleep(2000);
 
+	}
+
+	@Test(dependsOnMethods= "Alert_Confirmation")
+	public void MinandMax() throws InterruptedException
+	{
 		//Minimize and Maximize
 		test=extentReport.createTest("Verifying the MinandMax module");
 		test.log(Status.INFO, "Verifying the MinandMax module");
-
+		
 		WebElement show=driver.findElement(By.xpath("//*[@id='j_idt88:j_idt111']"));
 		show.click();
 		test.log(Status.INFO, "Clicked No for confirmation");
@@ -194,8 +248,19 @@ public class LeafgroundAutomation_Alert
 		CrossConfirmation.click();
 		test.log(Status.PASS, "Closed the page");
 		Thread.sleep(2000);
+		
+	}
 	
+	@AfterClass
+	public void teardown()
+	{
+		System.out.println("I closed the browser and it's done!!!");
 		driver.quit();
+	}
+	
+	@AfterSuite
+	public void flush()
+	{
 		extentReport.flush();
 	}
 }

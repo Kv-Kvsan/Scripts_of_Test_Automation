@@ -1,4 +1,5 @@
-@Hovermenu
+@Button
+
 Feature: Open leafground.com feature
 Scenario: Open the LeafGround site and verify the button module
 
