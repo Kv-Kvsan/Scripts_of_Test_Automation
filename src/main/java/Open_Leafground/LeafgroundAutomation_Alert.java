@@ -17,7 +17,6 @@ public class LeafgroundAutomation_Alert
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 
-
 		ExtentReports extentReport=new ExtentReports();
 		ExtentSparkReporter sparkReport = new ExtentSparkReporter("test-output/ExtentReport_using_Mainmethod_Alert.html");
 		extentReport.attachReporter(sparkReport);

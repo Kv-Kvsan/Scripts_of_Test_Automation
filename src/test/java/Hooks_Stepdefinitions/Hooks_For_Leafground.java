@@ -1,4 +1,4 @@
-package stepDefinitions;
+package Hooks_Stepdefinitions;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -18,12 +18,12 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Hooks_For_Leafground
 {
-
+	
 	public static WebDriver driver;
 	public static ExtentReports extentReport;
 	public static ExtentTest test;
 	public static ExtentSparkReporter sparkReport;
-	
+
 
 	@Before(order=1)
 	public void extents()
@@ -32,13 +32,13 @@ public class Hooks_For_Leafground
 		sparkReport = new ExtentSparkReporter("test-output/ExtentReport_Alert_BDD.html");
 		extentReport.attachReporter(sparkReport);
 	}
-	
+
 	@Before(order=2)
 	public void Chrome_setup() throws InterruptedException
 	{
 		test=extentReport.createTest("Open the leafground browser");
 		test.log(Status.INFO, "Verifying the leafground browser");
-		
+
 		WebDriverManager.chromedriver().setup();
 		Map<String, Object> prefs = new HashMap<>();
 		prefs.put("credentials_enable_service", false);
@@ -71,4 +71,3 @@ public class Hooks_For_Leafground
 		extentReport.flush();
 	}
 }
-

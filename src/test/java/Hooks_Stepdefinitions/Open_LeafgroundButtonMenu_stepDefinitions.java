@@ -1,4 +1,4 @@
-package stepDefinitions;
+package Hooks_Stepdefinitions;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 
 import com.aventstack.extentreports.Status;
 
-import static stepDefinitions.Hooks_For_Leafground.extentReport;
-import static stepDefinitions.Hooks_For_Leafground.test;
-import static stepDefinitions.Hooks_For_Leafground.driver;
+import static Hooks_Stepdefinitions.Hooks_For_Leafground.extentReport;
+import static Hooks_Stepdefinitions.Hooks_For_Leafground.test;
+import static Hooks_Stepdefinitions.Hooks_For_Leafground.driver;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

@@ -16,10 +16,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Login_SauceDemo_Application_Using_Non_Parameterization
 {
-
 	WebDriver driver;
-
-
+	
 	@Given("the user opens the URL of the Saucedemo")
 	public void the_user_opens_the_url_of_the_saucedemo() throws InterruptedException
 	{

@@ -19,7 +19,7 @@ public class Open_Leafground_stepDefinitions {
 	{
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://leafground.com/");
+		driver.get("http://leafground.com/");
 		Thread.sleep(2000);
 
 	}
