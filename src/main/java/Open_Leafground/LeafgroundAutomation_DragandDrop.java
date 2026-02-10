@@ -51,7 +51,7 @@ public class LeafgroundAutomation_DragandDrop {
 		WebElement DraggableColumns=driver.findElement(By.xpath("//*[@id='form:j_idt94:j_idt95']"));
 		WebElement DroppableColumns=driver.findElement(By.xpath("//*[@id='form:j_idt94:j_idt97']"));
 		Actions actionDraggableandDroppableColumns=new Actions(driver);
-		actionDraggableandDroppableColumns.moveToElement(DraggableColumns).clickAndHold().pause(Duration.ofMillis(500)).moveToElement(DroppableColumns).moveByOffset(20, 0).pause(Duration.ofMillis(500)).release().build().perform();
+		actionDraggableandDroppableColumns.clickAndHold(Drag_Columns).moveToElement(Drop_Columns).moveByOffset(20, 0).release().build().perform();
 		Thread.sleep(2000);
 
 		//Draggable Rows
