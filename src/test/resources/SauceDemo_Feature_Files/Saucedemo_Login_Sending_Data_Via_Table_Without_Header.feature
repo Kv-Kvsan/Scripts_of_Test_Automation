@@ -9,3 +9,4 @@ Then the user should enter the below credentials
 When the user clicks login
 Then the user will be directed to the inventory page of Saucedemo site
 Then the user can quit the chrome browser
+

@@ -1,6 +1,7 @@
-package stepDefinitions;
+package SauceDemo_stepDefinitions;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.openqa.selenium.By;
@@ -15,13 +16,12 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Login_SauceDemo_Sending_Data_Via_Table_With_Header {
-
+public class Login_SauceDemo_Sending_Data_Via_Table_Without_Header{
+	
 	WebDriver driver;
 	
-	@Given("the user launches the Saucedemo application")
-	public void the_user_launches_the_saucedemo_application() throws InterruptedException
-	{
+	@Given("the user opens the URL of the Saucedemo URL")
+	public void the_user_opens_the_url_of_the_saucedemo_url() throws InterruptedException {
 		WebDriverManager.chromedriver().setup();
 		Map<String, Object> prefs = new HashMap<>();
         prefs.put("credentials_enable_service", false);
@@ -34,11 +34,12 @@ public class Login_SauceDemo_Sending_Data_Via_Table_With_Header {
 		driver.manage().window().maximize();
 		driver.get("https://www.saucedemo.com/v1/");
 		Thread.sleep(2000);
+	    
 	}
-	
-	@Then("the login page should be visible to the user")
-	public void the_login_page_should_be_visible_to_the_user()
+	@Then("the login page of the saucedemo page should be displayed")
+	public void the_login_page_of_the_saucedemo_page_should_be_displayed() 
 	{
+	    
 		String CurrenURL=driver.getCurrentUrl();
 		String ExpectedURL="https://www.saucedemo.com/v1/";
 		if(CurrenURL.equalsIgnoreCase(ExpectedURL))
@@ -49,15 +50,13 @@ public class Login_SauceDemo_Sending_Data_Via_Table_With_Header {
 		{
 			System.out.println("It isn't a login URL");
 		}
-	    
 	}
-	@Then("the user enters valid login credentials")
-	public void the_user_enters_valid_login_credentials(DataTable dataTable) throws InterruptedException
-	{
-		
-		Map<String, String> credentials=dataTable.asMap(String.class, String.class);
-		String username=credentials.get("username"); 
-		String password=credentials.get("password"); 
+	@Then("the user should enter the below credentials")
+	public void the_user_should_enter_the_below_credentials(DataTable dataTable) throws InterruptedException {
+	   
+		List<String> credentials=dataTable.asList(String.class);
+		String username=credentials.get(0); 
+		String password=credentials.get(1); 
 		
 		WebElement UN=driver.findElement(By.xpath("//*[@id='login_button_container']/div/form/input[1]"));
 		UN.sendKeys(username);
@@ -66,27 +65,26 @@ public class Login_SauceDemo_Sending_Data_Via_Table_With_Header {
 		WebElement Pwd=driver.findElement(By.xpath("//*[@id='login_button_container']/div/form/input[2]"));
 		Pwd.sendKeys(password); 
 		Thread.sleep(2000);
-	        
 	}
 	
-	@When("the user submits the login form")
-	public void the_user_submits_the_login_form() throws InterruptedException
+	@When("the user clicks login")
+	public void the_user_clicks_login() throws InterruptedException
 	{
 		WebElement Login=driver.findElement(By.xpath("//*[@id='login_button_container']/div/form/input[3]"));
 		Login.click();   
 		Thread.sleep(3000);
-	    
 	}
-	@Then("the user should be redirected to the inventory page")
-	public void the_user_should_be_redirected_to_the_inventory_page()
+	
+	@Then("the user will be directed to the inventory page of Saucedemo site")
+	public void the_user_will_be_directed_to_the_inventory_page_of_saucedemo_site()
 	{
-		System.out.println(driver.getCurrentUrl());    
 	    
+		System.out.println(driver.getCurrentUrl());
 	}
-	@Then("the browser should be closed after verification")
-	public void the_browser_should_be_closed_after_verification() throws InterruptedException
-	{
-		Thread.sleep(2000);
-	    driver.quit();    
+	
+	@Then("the user can quit the chrome browser")
+	public void the_user_can_quit_the_chrome_browser() throws InterruptedException {
+	    Thread.sleep(2000);
+	    driver.quit();
 	}
 }

@@ -1,4 +1,4 @@
-package Runner;
+package SauceDemo_Runner;
 
 import org.junit.runner.RunWith;
 

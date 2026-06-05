@@ -1,4 +1,4 @@
-package stepDefinitions;
+package SauceDemo_stepDefinitions;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,14 +14,13 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Login_SauceDemo_Application_Using_Non_Parameterization
-{
+public class Saucedemo_Login_Using_Sending_Data_Via_Table_With_MultiData {
+	
 	WebDriver driver;
 	
-	@Given("the user opens the URL of the Saucedemo")
-	public void the_user_opens_the_url_of_the_saucedemo() throws InterruptedException
-	{
-
+	@Given("the user navigates to the Saucedemo site")
+	public void the_user_navigates_to_the_saucedemo_site() throws InterruptedException
+	{   
 		WebDriverManager.chromedriver().setup();
 		Map<String, Object> prefs = new HashMap<>();
         prefs.put("credentials_enable_service", false);
@@ -34,12 +33,11 @@ public class Login_SauceDemo_Application_Using_Non_Parameterization
 		driver.manage().window().maximize();
 		driver.get("https://www.saucedemo.com/v1/");
 		Thread.sleep(2000);
-
+		
 	}
-	@Then("the login page of the saucedemo site should be displayed")
-	public void the_login_page_of_the_saucedemo_site_should_be_displayed() 
-	{
-
+	@Then("the login screen should appear to the user")
+	public void the_login_screen_should_appear_to_the_user()
+	{  
 		String CurrenURL=driver.getCurrentUrl();
 		String ExpectedURL="https://www.saucedemo.com/v1/";
 		if(CurrenURL.equalsIgnoreCase(ExpectedURL))
@@ -49,48 +47,40 @@ public class Login_SauceDemo_Application_Using_Non_Parameterization
 		else
 		{
 			System.out.println("It isn't a login URL");
-		}
+		}    
 	}
-	@Then("the user can enter the Username as {string}")
-	public void the_user_can_enter_the_username_as(String Username) throws InterruptedException
+	@Then("the user enters username {string} and password {string}")
+	public void the_user_enters_username_and_password(String username, String password) throws InterruptedException
 	{
+	   
 		WebElement UN=driver.findElement(By.xpath("//*[@id='login_button_container']/div/form/input[1]"));
-		UN.sendKeys("standard_user");
-		
-		String Name=UN.getAttribute("value");
-		System.out.println("The Username is: " +Name);
+		UN.sendKeys(username);
 		Thread.sleep(2000);
-
-	}
-	@Then("the user can enter the password as {string}")
-	public void the_user_can_enter_the_password_as(String Password) throws InterruptedException 
-	{
+		
 		WebElement Pwd=driver.findElement(By.xpath("//*[@id='login_button_container']/div/form/input[2]"));
-		Pwd.sendKeys("secret_sauce");  
-		
-		String Pd=Pwd.getAttribute("value");
-		System.out.println("The Password is: " +Pd);
+		Pwd.sendKeys(password); 
 		Thread.sleep(2000);
-
+		
 	}
-	@When("the user clicks login button")
-	public void the_user_clicks_login_button() throws InterruptedException
+	@When("the user performs the login action")
+	public void the_user_performs_the_login_action() throws InterruptedException
 	{
 		WebElement Login=driver.findElement(By.xpath("//*[@id='login_button_container']/div/form/input[3]"));
 		Login.click();   
 		Thread.sleep(3000);
-
+	       
 	}
-	@Then("the user should be directed to the inventory page of Saucedemo")
-	public void the_user_should_be_directed_to_the_inventory_page_of_saucedemo() 
+	@Then("the user should land on the product inventory screen")
+	public void the_user_should_land_on_the_product_inventory_screen() 
 	{
-
-		System.out.println(driver.getCurrentUrl());
+		System.out.println(driver.getCurrentUrl());      
 	}
-	@Then("the user can quit the browser")
-	public void the_user_can_quit_the_browser() throws InterruptedException 
+	
+	@Then("the application should terminate the browser session")
+	public void the_application_should_terminate_the_browser_session() throws InterruptedException
 	{
-		Thread.sleep(3000);
-		driver.quit();
+		Thread.sleep(2000);
+	    driver.quit();      
 	}
 }
+

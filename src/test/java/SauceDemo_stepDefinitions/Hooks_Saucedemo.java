@@ -1,4 +1,4 @@
-package stepDefinitions;
+package SauceDemo_stepDefinitions;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -24,7 +24,7 @@ public class Hooks_Saucedemo {
 
 		prop = new Properties();
 		FileInputStream fis = new FileInputStream(
-				"C:\\Eclipse_WS\\seleniumframework\\src\\test\\resources\\config.properties");
+				"D:\\User Files\\Documents\\Scripts_of_Test_Automation\\config.properties");
 		prop.load(fis);
 
 		WebDriverManager.chromedriver().setup();

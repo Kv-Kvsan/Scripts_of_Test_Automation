@@ -1,9 +1,9 @@
-package stepDefinitions;
+package SauceDemo_stepDefinitions;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -26,7 +26,7 @@ public class Login_SauceDemo_Application_Using_Parameterization {
 
 		String CurrentURL=driver.getCurrentUrl();
 		String ExpectedURL="https://www.saucedemo.com/";
-		Assert.assertEquals(CurrentURL, ExpectedURL);
+		Assert.assertEquals(ExpectedURL, CurrentURL);
 	}
 
 	@Then("^the user should enter the Username as \"(.*?)\"$")
@@ -73,8 +73,7 @@ public class Login_SauceDemo_Application_Using_Parameterization {
 	@Then("the user should see the login form")
 	public void the_user_should_see_the_login_form() {
 		String CurrentURL=driver.getCurrentUrl();
-		Assert.assertTrue(CurrentURL.contains("saucedemo.com"),
-				"Login form not displayed. Current URL: " + CurrentURL);
+		Assert.assertTrue("Login form not displayed. Current URL: " + CurrentURL, CurrentURL.contains("saucedemo.com"));
 
 	}
 
