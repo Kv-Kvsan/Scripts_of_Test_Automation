@@ -1,5 +1,5 @@
-Feature: Open leafground.com
-Scenario: Open the leafground site to verify the page gets opened and the menus are displayed
+Feature: Mouse hover functionality
+Scenario: Verify the Mousehover functionalities in LeafGround
 
 Given the user opens the URL of the Leafground
 Then the user verify the URL

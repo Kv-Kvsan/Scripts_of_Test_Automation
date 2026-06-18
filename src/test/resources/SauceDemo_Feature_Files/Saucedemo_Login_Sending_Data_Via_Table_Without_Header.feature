@@ -1,5 +1,5 @@
-Feature: Open saucedemo.com site
-Scenario: Open saucedemo site and verify the login module
+Feature: Saucedemo Without Header
+Scenario: Verify the Saucedemo application functionalities without header
 
 Given the user opens the URL of the Saucedemo URL
 Then the login page of the saucedemo page should be displayed

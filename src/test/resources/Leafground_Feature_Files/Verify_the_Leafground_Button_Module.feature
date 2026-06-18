@@ -1,5 +1,6 @@
-Feature: Open leafground.com
-Scenario: Open the leafground site and verify the button module
+Feature: Button Module Validation 
+Scenario: Verify all Button  functionalities in LeafGround
+
 
 Given the user opens the URL of the Leafground
 Then the user verify the URL

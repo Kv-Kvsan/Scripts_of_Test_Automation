@@ -1,4 +1,4 @@
-Feature: Login functionality of Saucedemo website
+Feature: Saucedemo with Header
 Scenario: Successful login with valid credentials
 
 Given the user launches the Saucedemo application

@@ -1,5 +1,5 @@
-Feature: Open saucedemo.com feature
-Scenario: Open the saucedemo site and verify the login module
+Feature: Saucedemo Non-Parameterization
+Scenario: Verify the Saucedemo application using Non-Parameterization
 
 Given the user opens the URL of the Saucedemo
 Then the login page of the saucedemo site should be displayed

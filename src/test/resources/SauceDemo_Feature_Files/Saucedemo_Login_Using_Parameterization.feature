@@ -1,5 +1,5 @@
 @Login 
-Feature: Open saucedemo.com site
+Feature: Saucedemo Parameterization
 
 @Loginpositive
 Scenario: Successful login with valid credentials
