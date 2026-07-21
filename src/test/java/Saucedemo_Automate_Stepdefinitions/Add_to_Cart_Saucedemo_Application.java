@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 
 import io.cucumber.java.en.Then;
 
-public class Add_to_Cart_Z_to_A_Saucedemo_Application
+public class Add_to_Cart_Saucedemo_Application
 {
 
 	WebDriver driver=Hooks_Saucedemo_Automate.driver;

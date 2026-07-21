@@ -1,6 +1,6 @@
 @Filter_Reverse_Alphabetical_Order
-Feature: Filter module validation
-Scenario: Verify the filter functionality
+Feature: Filter_Reverse_Alphabetical_Order module validation
+Scenario: Verify the reverse alphabetical order filter functionality
 
 Given the user opens the URL of the Saucedemo application
 Then the login page of the saucedemo should be displayed

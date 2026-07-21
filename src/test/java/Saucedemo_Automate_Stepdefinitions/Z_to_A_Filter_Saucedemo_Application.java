@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import io.cucumber.java.en.Then;
 
-public class Filter_Saucedemo_Application {
+public class Z_to_A_Filter_Saucedemo_Application {
 
 	WebDriver driver=Hooks_Saucedemo_Automate.driver;
 	WebElement Filter;

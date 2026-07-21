@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src\\test\\resources\\Saucedemo_Automation\\Saucedemo_Website_Filter.feature", glue = {"Saucedemo_Automate_Stepdefinitions"})
+@CucumberOptions(features = "src\\test\\resources\\Saucedemo_Automation\\Saucedemo_Website_Filter_Z_to_A.feature", glue = {"Saucedemo_Automate_Stepdefinitions"})
 
 public class Runner_Class_Filter_Z_to_A {
 
