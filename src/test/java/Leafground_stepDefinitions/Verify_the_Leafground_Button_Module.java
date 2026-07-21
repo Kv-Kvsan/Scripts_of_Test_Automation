@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
+import Hooks.Hooks_Leafground;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
@@ -19,6 +20,8 @@ public class Verify_the_Leafground_Button_Module
 	@Then("the user mouse hover the button module")
 	public void the_user_mouse_hover_the_button_module() throws InterruptedException
 	{
+		
+		driver = Hooks_Leafground.driver;
 		
 		//Element Mouse Hover
 		WebElement Element=driver.findElement(By.xpath("//*[@id='menuform:j_idt40']"));
@@ -152,15 +155,14 @@ public class Verify_the_Leafground_Button_Module
 
 		WebElement Testleaf_Imagedisplayed=driver.findElement(By.xpath("//*[@id='j_idt88:j_idt102:imagePanel']"));
 
-		String Image_Class=Testleaf_Imagedisplayed.getDomAttribute("class");
+		boolean image=Testleaf_Imagedisplayed.isDisplayed();
+		System.out.println(image);
 
-		Assert.assertTrue(Image_Class.contains("ui-connected-overlay-enter-done"));
-
-		System.out.println("The image is appeared");
-
+		Assert.assertTrue(image);
+	
 		Thread.sleep(2000);
 
-		WebElement hidden=driver.findElement(By.xpath("//*[@id='j_idt88:j_idt96']/following::div[5]"));
+		WebElement hidden=driver.findElement(By.xpath("//div[@class='grid formgrid']"));
 		hidden.click();
 
 		Thread.sleep(2000);

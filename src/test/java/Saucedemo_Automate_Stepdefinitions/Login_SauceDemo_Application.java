@@ -63,47 +63,4 @@ public class Login_SauceDemo_Application {
 		System.out.println(driver.getCurrentUrl());
 
 	}
-
-	@Given("the user loads the URL of the Saucedemo application")
-	public void the_user_loads_the_url_of_the_saucedemo_application() throws InterruptedException {
-		driver = Hooks_Saucedemo.driver;
-		Thread.sleep(2000);
-
-	}
-
-	@Then("the user should see the login form")
-	public void the_user_should_see_the_login_form() {
-		String CurrentURL=driver.getCurrentUrl();
-		Assert.assertTrue("Login form not displayed. Current URL: " + CurrentURL, CurrentURL.contains("saucedemo.com"));
-
-	}
-
-	@Then("the user types an incorrect Username as {string}")
-	public void the_user_types_an_incorrect_username_as(String string_username) throws InterruptedException {
-		WebElement UN=driver.findElement(By.xpath("//*[@id='user-name']"));
-		UN.sendKeys(string_username);
-		Thread.sleep(2000);
-
-	}
-	@Then("the user types an incorrect Password as {string}")
-	public void the_user_types_an_incorrect_password_as(String string_password) throws InterruptedException {
-		WebElement Pwd=driver.findElement(By.xpath("//*[@id='password']"));
-		Pwd.sendKeys(string_password); 
-		Thread.sleep(2000);
-
-	}
-
-	@When("the user clicks the Sign-In button")
-	public void the_user_clicks_the_sign_in_button() throws InterruptedException {
-		WebElement Signin=driver.findElement(By.xpath("//*[@id='login-button']"));
-		Signin.click();   
-		Thread.sleep(3000);   
-	}
-
-	@Then("the application should show an error message")
-	public void the_application_should_show_an_error_message()
-	{
-		WebElement error=driver.findElement(By.xpath("//*[text()='Epic sadface: Username and password do not match any user in this service']"));
-		System.out.println(error.getText());
-	}
 }

@@ -26,6 +26,7 @@ public class Hooks_Leafground {
 		FileInputStream fis = new FileInputStream("D:\\User Files\\Documents\\Scripts_of_Test_Automation\\config.properties");
 		prop.load(fis);
 
+		System.out.println("The browser is launching");
 		WebDriverManager.chromedriver().setup();
 
 		ChromeOptions options = new ChromeOptions();
@@ -49,6 +50,7 @@ public class Hooks_Leafground {
 
 		Thread.sleep(2000);
 
+		System.out.println("Execution is successfully completed!!!");
 		driver.quit();
 	}
 }

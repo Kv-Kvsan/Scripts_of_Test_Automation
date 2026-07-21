@@ -6,7 +6,7 @@ import io.cucumber.junit.CucumberOptions;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src\\test\\resources\\Leafground_Feature_Files\\Verify_the_Leafground_Button_Module.feature", glue = {"Leafground_stepDefinitions", }, plugin = {
+@CucumberOptions(features = "src\\test\\resources\\Leafground_Feature_Files\\Verify_the_Leafground_Button_Module.feature", glue = {"Leafground_stepDefinitions", "Hooks" }, plugin = {
         "pretty",
         "html:test-output/cucumber-report.html"})
 
