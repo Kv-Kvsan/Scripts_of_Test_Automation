@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import SauceDemo_stepDefinitions.Hooks_Saucedemo;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -17,7 +17,7 @@ public class Login_SauceDemo_Application {
 	@Given("the user opens the URL of the Saucedemo application")
 	public void the_user_opens_the_url_of_the_saucedemo_application() throws InterruptedException {
 
-		driver = Hooks_Saucedemo.driver;
+		driver = Hooks_Saucedemo_Automate.driver;
 		Thread.sleep(2000);
 
 	}
@@ -27,6 +27,10 @@ public class Login_SauceDemo_Application {
 
 		String CurrentURL=driver.getCurrentUrl();
 		String ExpectedURL="https://www.saucedemo.com/";
+		
+		System.out.println(CurrentURL);
+		System.out.println(ExpectedURL);
+		
 		Assert.assertEquals(ExpectedURL, CurrentURL);
 	}
 
