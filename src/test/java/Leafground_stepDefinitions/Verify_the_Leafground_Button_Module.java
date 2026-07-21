@@ -20,8 +20,6 @@ public class Verify_the_Leafground_Button_Module
 	public void the_user_mouse_hover_the_button_module() throws InterruptedException
 	{
 		
-		driver = Hooks_Leafground.driver;
-		
 		//Element Mouse Hover
 		WebElement Element=driver.findElement(By.xpath("//*[@id='menuform:j_idt40']"));
 		Actions actionselement=new Actions(driver);

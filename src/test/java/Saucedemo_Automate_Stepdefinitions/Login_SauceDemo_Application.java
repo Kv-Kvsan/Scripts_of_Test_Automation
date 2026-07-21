@@ -1,15 +1,16 @@
-package SauceDemo_stepDefinitions;
+package Saucedemo_Automate_Stepdefinitions;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import SauceDemo_stepDefinitions.Hooks_Saucedemo;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class Login_SauceDemo_Application_Using_Parameterization {
+public class Login_SauceDemo_Application {
 
 	WebDriver driver;
 
@@ -105,5 +106,4 @@ public class Login_SauceDemo_Application_Using_Parameterization {
 		WebElement error=driver.findElement(By.xpath("//*[text()='Epic sadface: Username and password do not match any user in this service']"));
 		System.out.println(error.getText());
 	}
-
 }

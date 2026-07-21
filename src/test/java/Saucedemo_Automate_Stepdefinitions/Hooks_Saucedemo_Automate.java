@@ -1,4 +1,4 @@
-package Leafground_stepDefinitions;
+package Saucedemo_Automate_Stepdefinitions;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -14,7 +14,7 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Hooks_Leafground {
+public class Hooks_Saucedemo_Automate {
 
 	public static WebDriver driver;	
 	public static Properties prop;
@@ -23,7 +23,8 @@ public class Hooks_Leafground {
 	public void setup() throws IOException, InterruptedException {
 
 		prop = new Properties();
-		FileInputStream fis = new FileInputStream("D:\\User Files\\Documents\\Scripts_of_Test_Automation\\config.properties");
+		FileInputStream fis = new FileInputStream(
+				"D:\\User Files\\Documents\\Scripts_of_Test_Automation\\config.properties");
 		prop.load(fis);
 
 		WebDriverManager.chromedriver().setup();
@@ -39,7 +40,7 @@ public class Hooks_Leafground {
 
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-		driver.get(prop.getProperty("Leafground_URL"));
+		driver.get(prop.getProperty("url"));
 
 	}
 
