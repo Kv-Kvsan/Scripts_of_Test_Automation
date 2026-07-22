@@ -1,6 +1,6 @@
 @Login 
-Feature: Saucedemo Parameterization
-Scenario: Successful login with valid credentials
+Feature: Saucedemo Login
+Scenario: Verify the login functionality of the Saucedemo
 
 Given the user opens the URL of the Saucedemo application
 Then the login page of the saucedemo should be displayed

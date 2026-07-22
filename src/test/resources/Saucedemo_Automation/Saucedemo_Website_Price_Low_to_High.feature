@@ -1,6 +1,6 @@
 @Filter_Price_Low_to_High
 Feature: Filter the price value  validation
-Scenario: Verify the filter prices functionality
+Scenario: Verify the Low to High price filter functionality
 
 Given the user opens the URL of the Saucedemo application
 Then the login page of the saucedemo should be displayed
