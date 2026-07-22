@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src\\test\\resources\\Saucedemo_Automation\\Saucedemo_Website_Login.feature", glue = {"SauceDemo_stepDefinitions"})
+@CucumberOptions(features = "src\\test\\resources\\Saucedemo_Automation\\Saucedemo_Website_Login.feature", glue = {"Saucedemo_Automate_Stepdefinitions"})
 public class Runner_Class_Login_Using_Saucedemo {
 
 }
